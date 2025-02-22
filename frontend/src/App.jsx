@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import { AuthProvider } from './contexts/AuthContext.jsx';
+import { AuthProvider  } from './contexts/AuthContext.jsx';
 import Register from './components/Register.jsx';
 import Login from './components/Login.jsx';
 import UserProfile from './components/UserProfile.jsx';
