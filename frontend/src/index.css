@@ -1,0 +1,253 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+header {
+  background-color: #373b69;
+  display: flex;
+  
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+  /* 
+  padding: 1rem;
+  justify-content: flex-end;
+   */
+  
+}
+
+.search {
+  background-color: transparent;
+  /* border: 2px solid #22254b; */
+  /* border-radius: 50px; */
+  color: white;
+  font-family: inherit;
+  font-size: 1.2rem;
+
+  /* padding: 0.5rem 1.5rem; */
+/*  */
+  margin-right: 10px; /* Adjust as needed */
+  padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search:focus {
+  outline: 0;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #22254b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie-card { 
+  background-color: #373b69;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba( 0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  width: 300px;
+}
+
+.movie-card img {
+  object-fit: cover;
+  height: 450px;
+  width: 100% ;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+
+.movie-over {
+  background-color: #fff ;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 -3px 3px rgba( 0, 0, 0, 0.1) ;
+  color: #22254b;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover .movie-over {
+  transform: translateY(0%);
+}
+
+.tag {
+  background-color: #22254b;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.tag.green{
+  color: rgba( 5, 184, 5)
+}
+.tag.orange{
+  color: orange;
+}
+.tag.red{
+  color: red;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f0f0f0;
+  /*  */
+  align-items: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  /*  */
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color:  #ddd;;
+}
+
+main {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Component-specific styles */
+.auth-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-form p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
+}
