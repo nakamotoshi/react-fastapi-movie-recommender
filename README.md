@@ -8,5 +8,6 @@ python3 main.py
 
 To run the frontend (node.js, react and axios installed):
 ```
+cd frontend/
 npm run dev
 ```
